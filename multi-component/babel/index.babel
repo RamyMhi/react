@@ -1,0 +1,16 @@
+var Text1=React.createClass({
+  render:function(){
+    return(<div>
+        <h1>title </h1>
+        <p>something here</p>
+      </div>);
+  }
+});
+
+ReactDOM.render(
+  <div>
+    <Text1 />
+    <Text1 />
+    <Text1 />
+  </div>
+  ,document.getElementById("container"));

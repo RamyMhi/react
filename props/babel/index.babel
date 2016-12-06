@@ -1,0 +1,16 @@
+var Movie=React.createClass({
+  render:function(){
+    return (
+       <div>
+        <h1>{this.props.title}</h1>
+        <h3>{this.props.genre}</h3>
+       </div>
+        );
+  }
+});
+ReactDOM.render(
+       <div>
+        <Movie title="Flash" genre="fantasy"/>
+        <Movie title="Avatar" genre="fantasy" />
+       </div>
+  ,document.getElementById("container"));

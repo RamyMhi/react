@@ -1,0 +1,23 @@
+var Comment=React.createClass({
+  edit:function(){
+    alert("edit btn");
+  },
+  remove:function(){
+    alert("remove btn");
+  },
+  render:function(){
+    return (
+      <div className="commentContainer">
+        <div className="commentText">{this.props.children}</div>
+        <button onClick={this.edit} className="btn btn-primary">edit</button>
+        <button onClick={this.remove} className="btn btn-danger">remove</button>
+      </div>)
+  }
+});
+ReactDOM.render(
+   <div className="board">
+    <Comment>text 1</Comment>
+    <Comment>text 2</Comment>
+    <Comment>text 3</Comment>
+   </div>
+   ,document.getElementById("container"));
